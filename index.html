@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BT5 Custom slider & Navbar with media query</title>
+
+	<!--bt5 links-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!--css links-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<!--fav icon-->
+	<link rel="icon" type="img/png" href="images/favicon.png">
+	
+</head>
+<body>
+	<header class="bg-warning">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  				<div class="container-fluid">
+    				<a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="minimo"></a>
+    					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      						<span class="navbar-toggler-icon"></span>
+    					</button>
+
+    				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 px-3">
+        					<li class="nav-item px-3">
+          						<a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+        					</li>
+        					<li class="nav-item px-3">
+          						<a class="nav-link text-dark" href="link.html">Link</a>
+        					</li>
+        					<li class="nav-item dropdown px-3">
+          						<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            						Dropdown
+          						</a>
+          						<ul class="dropdown-menu">
+            						<li><a class="dropdown-item" href="#">Action</a></li>
+            						<li><a class="dropdown-item" href="#">Another action</a></li>
+            						<li><hr class="dropdown-divider"></li>
+            						<li><a class="dropdown-item" href="#">Something else here</a></li>
+          						</ul>
+        					</li>
+        					<li class="nav-item px-3">
+          						<a class="nav-link disabled text-dark" aria-disabled="true">Disabled</a>
+        					</li>
+      					</ul>
+      					<form class="d-flex" role="search">
+        					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        						<button class="btn btn-outline-success" type="submit">Search</button>
+      					</form>
+    				</div>
+  				</div>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container p-3">
+			<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  				<div class="bg-dark p-4">
+    				<h5 class="text-body-emphasis h4">Collapsed content</h5>
+    				<span class="text-body-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, quasi impedit ut beatae corporis, ratione vel laboriosam vero illum ea recusandae, nemo consequuntur magnam tempore dolore. Perspiciatis excepturi porro corporis sapiente recusandae aspernatur quos earum aperiam autem amet, adipisci maxime laboriosam dolores. Ea ab fugiat error laudantium rerum odio nesciunt, unde quisquam eos, in facere consectetur nulla. Aut qui dolores asperiores expedita, nam magni culpa error numquam saepe ullam fugiat temporibus quia, quae ratione! Consequuntur, reprehenderit porro! Tenetur qui dolor excepturi vel rerum repudiandae. Soluta tenetur amet expedita unde, quam consequuntur, saepe enim minus repudiandae eveniet quod animi cum quisquam.</span>
+  				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark">
+  				<div class="container-fluid">
+    				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    				</button>
+  				</div>
+			</nav>
+		</div>	
+	</section>
+	
+	<section class="sliders">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+
+		<!--slider start-->
+
+					<div id="carousel1" class="carousel slide">
+  						<div class="carousel-indicators c-i">
+    						<button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    						<button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    						<button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  						</div>
+  						<div class="carousel-inner">
+
+    						<div class="carousel-item active">
+      							<img src="images/sky.png" class="d-block w-100" alt="...">
+      								<div class="carousel-caption d-none d-md-block">
+        								<h5>First slide label</h5>
+        								<p>Some representative placeholder content for the first slide.</p>
+      								</div>
+    						</div>
+    						<div class="carousel-item">
+
+      							<img src="images/sky2.png" class="d-block w-100" alt="...">
+      								<div class="carousel-caption d-none d-md-block">
+        								<h5>Second slide label</h5>
+        								<p>Some representative placeholder content for the second slide.</p>
+      								</div>
+    						</div>
+    						<div class="carousel-item">
+
+      							<img src="images/sky3.png" class="d-block w-100" alt="...">
+      								<div class="carousel-caption d-none d-md-block">
+        								<h5>Third slide label</h5>
+        								<p>Some representative placeholder content for the third slide.</p>
+      								</div>
+    						</div>
+  						</div>
+  					<button class="carousel-control-prev cpv" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="visually-hidden">Previous</span>
+  					</button>
+  					<button class="carousel-control-next cpn" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="visually-hidden">Next</span>
+  					</button>
+				</div>
+
+		<!--slider end-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="banner">
+		<div class="container p-5">
+			<div class="row">
+				<div class="col-lg-6 col-sm-8 col-sm-10">
+					<div id="carouselExampleCaptions" class="carousel slide ">
+  						<div class="carousel-indicators c_ind">
+    						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  						</div>
+  						<div class="carousel-inner pt-2 pb-2">
+
+  							<!--item start-->
+
+    						<div class="carousel-item active">
+      							<div class="slider">
+      								<h2>Exploring the Mysteries of Nebulae</h2>
+      								<p>When we gaze into the night sky, we often marvel at the stars & planets. Yet, among these celestial wonders are nebulae — magnificent clouds of gas & dust that hold the secrets of star formation & the history of our universe. These cosmic phenomena, often referred to as the “stellar nurseries,” captivate astronomers & stargazers alike with their beauty & scientific significance.
+      								Nebulae are vital to understanding the universe’s past, present, and future. From birthing stars to preserving the remnants of stellar deaths, nebulae continue to inspire curiosity and wonder. As we delve deeper into their mysteries, they remind us of the intricate & ever-evolving nature of the cosmos.
+      								</p>
+      								<button>Explore More</button>
+      							</div>
+    						</div>
+
+    						<!--item end-->
+    						<!--item start-->
+
+    						<div class="carousel-item">
+      							<div class="slider">
+      								<h2>What Are Nebulae? Types of Nebulae</h2>
+      								<p>Nebulae are vast, interstellar clouds composed primarily of hydrogen, helium, & other ionized gases, along with cosmic dust. These massive formations are often the birthplaces of stars & planets. Nebulae vary widely in size, sometimes stretching across hundreds of light-years, sometimes stretching across hundreds of light-years depending on their composition & interaction with nearby stars. The word "nebula" originates from the Latin term for "cloud," an apt description for these celestial phenomena. From nurturing the earliest stages of star formation to holding remnants of stellar death, nebulae serve as time capsules, preserving information about the universe's history.
+      								</p>
+
+      								<button>Explore More</button>
+      							</div>
+    						</div>
+
+    						<!--item end-->
+							<!--item start-->
+
+    						<div class="carousel-item">
+      							<div class="slider">
+      								<h2>The Role of Nebulae in Star Formation</h2>
+      								<p>Nebulae play a critical role in the lifecycle of stars. Within their dense regions, gravity pulls gas and dust together, creating clumps that grow in size and density over time. These clumps, known as protostars, represent the earliest stage of a star’s life cycle. As the gravitational pull increases, the core temperature of these protostars rises, eventually reaching the point where nuclear fusion ignites.
+      								Once nuclear fusion begins, a new star is born, radiating energy and light. The surrounding nebula’s gas and dust may either be incorporated into planets and other celestial bodies or dispersed by the star’s powerful winds. Moreover, the materials within nebulae often contain the heavier elements.</p>
+      								<button>Explore More</button>
+      							</div>
+    						</div>
+
+    						<!--item end-->
+
+
+  						</div>
+  						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+
+
+	
+<!--js links-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
